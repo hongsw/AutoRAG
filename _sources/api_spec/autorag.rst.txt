@@ -8,13 +8,23 @@ Subpackages
    :maxdepth: 4
 
    autorag.data
-   autorag.evaluate
+   autorag.deploy
+   autorag.evaluation
    autorag.nodes
    autorag.schema
    autorag.utils
+   autorag.vectordb
 
 Submodules
 ----------
+
+autorag.chunker module
+----------------------
+
+.. automodule:: autorag.chunker
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 autorag.cli module
 ------------------
@@ -28,14 +38,6 @@ autorag.dashboard module
 ------------------------
 
 .. automodule:: autorag.dashboard
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-autorag.deploy module
----------------------
-
-.. automodule:: autorag.deploy
    :members:
    :undoc-members:
    :show-inheritance:
@@ -56,6 +58,14 @@ autorag.node\_line module
    :undoc-members:
    :show-inheritance:
 
+autorag.parser module
+---------------------
+
+.. automodule:: autorag.parser
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 autorag.strategy module
 -----------------------
 
@@ -68,6 +78,14 @@ autorag.support module
 ----------------------
 
 .. automodule:: autorag.support
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+autorag.validator module
+------------------------
+
+.. automodule:: autorag.validator
    :members:
    :undoc-members:
    :show-inheritance:

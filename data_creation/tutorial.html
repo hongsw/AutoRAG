@@ -12,17 +12,17 @@
         gtag('js', new Date());
         gtag('config', 'G-T8ZKQM6RT9');
     </script>
-    <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Dataset Format" href="data_format.html" /><link rel="prev" title="Configure LLM &amp; Embedding models" href="../local_model.html" />
+    <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Dataset Format" href="data_format.html" /><link rel="prev" title="Evaluate your RAG" href="../test_your_rag.html" />
         <link rel="canonical" href="https://docs.auto-rag.com/data_creation/tutorial.html" />
 
-    <!-- Generated with Sphinx 7.3.7 and Furo 2024.05.06 -->
-        <title>Start creating your own evaluation data - AutoRAG documentation</title>
+    <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
+        <title>Evaluation data creation tutorial - AutoRAG documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=387cc868" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=36a5483c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
     
     
 
@@ -101,19 +101,6 @@
       <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
     </svg>
   </symbol>
-  <symbol id="svg-sun-half" viewBox="0 0 24 24">
-    <title>Auto light/dark mode</title>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-      <circle cx="12" cy="12" r="9" />
-      <path d="M13 12h5" />
-      <path d="M13 15h4" />
-      <path d="M13 18h1" />
-      <path d="M13 9h4" />
-      <path d="M13 6h1" />
-    </svg>
-  </symbol>
   <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
     <title>Auto light/dark, in light mode</title>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -154,7 +141,7 @@
       <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
       <path d="M13.5 6.5l4 4" />
       <path d="M20 21l2 -2l-2 -2" />
-      <path d="M17 17l-2 2l2 2" /
+      <path d="M17 17l-2 2l2 2" />
     </svg>
   </symbol>
   <symbol id="svg-eye" viewBox="0 0 24 24">
@@ -231,19 +218,67 @@
 <li class="toctree-l1"><a class="reference internal" href="../structure.html">Structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">TroubleShooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../local_model.html">Configure LLM &amp; Embedding models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../migration.html">Migration Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../test_your_rag.html">Evaluate your RAG</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Data Creation</span></p>
 <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Start creating your own evaluation data</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Evaluation data creation tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_format.html">Dataset Format</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ragas.html">RAGAS evaluation data generation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="data_creation.html">Data Creation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Data Creation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="qa_creation/qa_creation.html">QA creation</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of QA creation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="qa_creation/query_gen.html">Query Generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qa_creation/answer_gen.html">Answer Generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qa_creation/filter.html">Filtering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qa_creation/evolve.html">Query Evolving</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="chunk/chunk.html">Chunk</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Chunk</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="chunk/langchain_chunk.html">Langchain Chunk</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chunk/llama_index_chunk.html">Llama Index Chunk</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="parse/parse.html">Parse</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Parse</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="parse/langchain_parse.html">Langchain Parse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parse/llama_parse.html">Llama Parse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parse/clova.html">Clova</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parse/table_hybrid_parse.html">Table Hybrid Parse</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="legacy/legacy.html">Legacy</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Legacy</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="legacy/ragas.html">RAGAS evaluation data generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="legacy/tutorial.html">Start creating your own evaluation data</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Optimization</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../optimization/optimization.html">How optimization works</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../optimization/folder_structure.html">Folder Structure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../optimization/custom_config.html">Make custom config yaml file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../optimization/custom_config.html">Make a custom config YAML file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../optimization/strategies.html">Strategy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../optimization/sample_config.html">Sample YAML file guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../integration/llm/llm.html">Configure LLM</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Configure LLM</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integration/llm/aws_bedrock.html">AWS Bedrock x AutoRAG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/llm/huggingface_llm.html">HuggingFace LLM x AutoRAG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/llm/nvidia_nim.html">Nvidia Nim x AutoRAG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/llm/ollama.html">OLLAMA x AutoRAG</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../integration/vectordb/vectordb.html">Configure Vector DB</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Configure Vector DB</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/chroma.html">Chroma</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/milvus.html">Milvus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/weaviate.html">Weaviate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/pinecone.html">Pinecone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/couchbase.html">Couchbase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/qdrant.html">Qdrant</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Evaluation Metrics</span></p>
 <ul>
@@ -254,26 +289,24 @@
 <p class="caption" role="heading"><span class="caption-text">Nodes &amp; Modules</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../nodes/index.html">Available List</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/query_expansion/query_expansion.html"><strong>1. Query Expansion</strong></a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of 1. Query Expansion</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/query_expansion/query_expansion.html"><strong>1. Query Expansion</strong></a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of 1. Query Expansion</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/query_expansion/query_decompose.html">Query Decompose</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/query_expansion/hyde.html">HyDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/query_expansion/multi_query_expansion.html">Multi Query Expansion</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/retrieval/retrieval.html">2. Retrieval</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of 2. Retrieval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/retrieval/retrieval.html">2. Retrieval</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of 2. Retrieval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/bm25.html">BM25</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/vectordb.html">Vectordb</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/hybrid_rrf.html">Hybrid - rrf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/hybrid_cc.html">Hybrid - cc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/hybrid_rsf.html">Hybrid - rsf</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/hybrid_dbsf.html">Hybrid - dbsf</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_augmenter/passage_augmenter.html">3. Passage Augmenter</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of 3. Passage Augmenter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_augmenter/passage_augmenter.html">3. Passage Augmenter</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of 3. Passage Augmenter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_augmenter/prev_next_augmenter.html">Prev Next Augmenter</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_reranker/passage_reranker.html">4. Passage_Reranker</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of 4. Passage_Reranker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_reranker/passage_reranker.html">4. Passage_Reranker</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of 4. Passage_Reranker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/upr.html">UPR</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/tart.html">TART</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/monot5.html">MonoT5</a></li>
@@ -286,9 +319,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/flag_embedding_reranker.html">Flag Embedding Reranker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/flag_embedding_llm_reranker.html">Flag Embedding LLM Reranker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/time_reranker.html">Time Reranker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/openvino_reranker.html">OpenVINO Reranker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/voyageai_reranker.html">voyageai_reranker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/mixedbreadai_reranker.html">Mixedbread AI Reranker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/flashrank_reranker.html">FlashRank Reranker</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_filter/passage_filter.html">5. Passage Filter</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of 5. Passage Filter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_filter/passage_filter.html">5. Passage Filter</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of 5. Passage Filter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_filter/similarity_threshold_cutoff.html">Similarity Threshold Cutoff</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_filter/similarity_percentile_cutoff.html">Similarity Percentile Cutoff</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_filter/recency_filter.html">Recency Filter</a></li>
@@ -296,18 +333,19 @@
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_filter/percentile_cutoff.html">Percentile Cutoff</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_compressor/passage_compressor.html">6. Passage_Compressor</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of 6. Passage_Compressor</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_compressor/passage_compressor.html">6. Passage_Compressor</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle navigation of 6. Passage_Compressor</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_compressor/tree_summarize.html">Tree Summarize</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_compressor/refine.html">Refine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_compressor/longllmlingua.html">Long LLM Lingua</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/prompt_maker/prompt_maker.html">7. Prompt Maker</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of 7. Prompt Maker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/prompt_maker/prompt_maker.html">7. Prompt Maker</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle navigation of 7. Prompt Maker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/prompt_maker/fstring.html">F-String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/prompt_maker/long_context_reorder.html">Long Context Reorder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nodes/prompt_maker/window_replacement.html">Window Replacement</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/generator/generator.html">8. Generator</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of 8. Generator</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/generator/generator.html">8. Generator</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle navigation of 8. Generator</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/generator/llama_index_llm.html">llama_index LLM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/generator/vllm.html">vllm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/generator/openai_llm.html">OpenAI LLM</a></li>
@@ -325,36 +363,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../api_spec/modules.html">autorag</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of autorag</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../api_spec/autorag.html">autorag package</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of autorag package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../api_spec/autorag.data.html">autorag.data package</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of autorag.data package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.data.corpus.html">autorag.data.corpus package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.data.qacreation.html">autorag.data.qacreation package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.data.utils.html">autorag.data.utils package</a></li>
-</ul>
-</li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../api_spec/autorag.evaluate.html">autorag.evaluate package</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of autorag.evaluate package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.evaluate.metric.html">autorag.evaluate.metric package</a></li>
-</ul>
-</li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../api_spec/autorag.nodes.html">autorag.nodes package</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle navigation of autorag.nodes package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.nodes.generator.html">autorag.nodes.generator package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.nodes.passageaugmenter.html">autorag.nodes.passageaugmenter package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.nodes.passagecompressor.html">autorag.nodes.passagecompressor package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.nodes.passagefilter.html">autorag.nodes.passagefilter package</a></li>
-<li class="toctree-l4 has-children"><a class="reference internal" href="../api_spec/autorag.nodes.passagereranker.html">autorag.nodes.passagereranker package</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle navigation of autorag.nodes.passagereranker package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5"><a class="reference internal" href="../api_spec/autorag.nodes.passagereranker.tart.html">autorag.nodes.passagereranker.tart package</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.nodes.promptmaker.html">autorag.nodes.promptmaker package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.nodes.queryexpansion.html">autorag.nodes.queryexpansion package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.nodes.retrieval.html">autorag.nodes.retrieval package</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../api_spec/autorag.schema.html">autorag.schema package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../api_spec/autorag.utils.html">autorag.utils package</a></li>
-</ul>
-</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../api_spec/modules.html">autorag</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle navigation of autorag</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -397,154 +406,154 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="start-creating-your-own-evaluation-data">
-<h1>Start creating your own evaluation data<a class="headerlink" href="#start-creating-your-own-evaluation-data" title="Link to this heading">¶</a></h1>
-<section id="index">
-<h2>Index<a class="headerlink" href="#index" title="Link to this heading">¶</a></h2>
-<ol class="arabic simple">
-<li><p><a class="reference internal" href="#overview"><span class="xref myst">Overview</span></a></p></li>
-<li><p><a class="reference internal" href="#make-corpus-data-from-raw-documents"><span class="xref myst">Raw data to Corpus data</span></a></p></li>
-<li><p><a class="reference internal" href="#make-qa-data-from-corpus-data"><span class="xref myst">Corpus data to QA data</span></a></p></li>
-<li><p><a class="reference internal" href="#use-custom-prompt"><span class="xref myst">Use custom prompt</span></a></p></li>
-<li><p><a class="reference internal" href="#use-multiple-prompts"><span class="xref myst">Use multiple prompts</span></a></p></li>
-</ol>
-</section>
+          <section id="evaluation-data-creation-tutorial">
+<h1>Evaluation data creation tutorial<a class="headerlink" href="#evaluation-data-creation-tutorial" title="Link to this heading">¶</a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <p>For the evaluation of RAGs we need data, but in most cases we have little or no satisfactory data.</p>
 <p>However, since the advent of LLM, creating synthetic data has become one of the good solutions to this problem.</p>
 <p>The following guide covers how to use LLM to create data in a form that AutoRAG can use.</p>
 <hr class="docutils" />
-<p><img alt="Data Creation" src="../_images/data_creation.png" /></p>
-<p>AutoRAG aims to work with Python’s ‘primitive data types’ for scalability and convenience.</p>
-<p>Therefore, to use AutoRAG, you need to convert your raw data into <code class="docutils literal notranslate"><span class="pre">corpus</span> <span class="pre">data</span></code>  and <code class="docutils literal notranslate"><span class="pre">qa</span> <span class="pre">data</span></code> to our <a class="reference internal" href="data_format.html"><span class="std std-doc">data format</span></a>.</p>
+<p><img alt="Data Creation" src="../_images/data_creation_pipeline.png" /></p>
 </section>
-<section id="make-corpus-data-from-raw-documents">
-<h2>Make corpus data from raw documents<a class="headerlink" href="#make-corpus-data-from-raw-documents" title="Link to this heading">¶</a></h2>
-<ol class="arabic simple">
-<li><p>Load your raw data to texts with loaders such as lama_index, LangChain, etc.</p></li>
-<li><p>Chunk the texts into passages. Use Langchain, LlamaIndex, etc.</p></li>
-<li><p>Make it into corpus data to use converter functions.
-There are converter functions for llama index <code class="docutils literal notranslate"><span class="pre">Document</span></code>, <code class="docutils literal notranslate"><span class="pre">TextNode</span></code>, and Langchain <code class="docutils literal notranslate"><span class="pre">Document</span></code> objects,
-which is <code class="docutils literal notranslate"><span class="pre">llama_document_to_parquet</span></code>, <code class="docutils literal notranslate"><span class="pre">llama_text_node_to_parquet</span></code>, and <code class="docutils literal notranslate"><span class="pre">langchain_document_to_parquet</span></code>.</p></li>
-</ol>
-<ul class="simple">
-<li><p>Use Llama Index</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">llama_index.core</span> <span class="kn">import</span> <span class="n">SimpleDirectoryReader</span>
-<span class="kn">from</span> <span class="nn">llama_index.core.node_parser</span> <span class="kn">import</span> <span class="n">TokenTextSplitter</span>
-<span class="kn">from</span> <span class="nn">autorag.data.corpus</span> <span class="kn">import</span> <span class="n">llama_text_node_to_parquet</span>
-
-<span class="n">documents</span> <span class="o">=</span> <span class="n">SimpleDirectoryReader</span><span class="p">(</span><span class="s1">&#39;your_dir_path&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
-<span class="n">nodes</span> <span class="o">=</span> <span class="n">TokenTextSplitter</span><span class="p">()</span><span class="o">.</span><span class="n">get_nodes_from_documents</span><span class="p">(</span><span class="n">documents</span><span class="o">=</span><span class="n">documents</span><span class="p">,</span> <span class="n">chunk_size</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">chunk_overlap</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
-<span class="n">corpus_df</span> <span class="o">=</span> <span class="n">llama_text_node_to_parquet</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span> <span class="s1">&#39;path/to/corpus.parquet&#39;</span><span class="p">)</span>
+<section id="parsing">
+<h2>1. Parsing<a class="headerlink" href="#parsing" title="Link to this heading">¶</a></h2>
+<section id="set-yaml-file">
+<h3>Set YAML File<a class="headerlink" href="#set-yaml-file" title="Link to this heading">¶</a></h3>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">modules</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">module_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">langchain_parse</span>
+<span class="w">    </span><span class="nt">parse_method</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pdfminer</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Use LangChain</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">langchain_community.document_loaders</span> <span class="kn">import</span> <span class="n">DirectoryLoader</span>
-<span class="kn">from</span> <span class="nn">langchain_text_splitters</span> <span class="kn">import</span> <span class="n">RecursiveCharacterTextSplitter</span>
-<span class="kn">from</span> <span class="nn">autorag.data.corpus</span> <span class="kn">import</span> <span class="n">langchain_documents_to_parquet</span>
+<p>You can also use multiple Parse modules at once.
+However, in this case, you’ll need to return a new process for each parsed result.</p>
+</section>
+<section id="start-parsing">
+<h3>Start Parsing<a class="headerlink" href="#start-parsing" title="Link to this heading">¶</a></h3>
+<p>You can parse your raw documents with just a few lines of code.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">autorag.parser</span> <span class="kn">import</span> <span class="n">Parser</span>
 
-<span class="n">documents</span> <span class="o">=</span> <span class="n">DirectoryLoader</span><span class="p">(</span><span class="s1">&#39;your_dir_path&#39;</span><span class="p">,</span> <span class="n">glob</span><span class="o">=</span><span class="s1">&#39;**/*.md&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
-<span class="n">documents</span> <span class="o">=</span> <span class="n">RecursiveCharacterTextSplitter</span><span class="p">(</span><span class="n">chunk_size</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">chunk_overlap</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span><span class="o">.</span><span class="n">split_documents</span><span class="p">(</span><span class="n">documents</span><span class="p">)</span>
-<span class="n">corpus_df</span> <span class="o">=</span> <span class="n">langchain_documents_to_parquet</span><span class="p">(</span><span class="n">documents</span><span class="p">,</span> <span class="s1">&#39;path/to/corpus.parquet&#39;</span><span class="p">)</span>
+<span class="n">parser</span> <span class="o">=</span> <span class="n">Parser</span><span class="p">(</span><span class="n">data_path_glob</span><span class="o">=</span><span class="s2">&quot;your/data/path/*&quot;</span><span class="p">,</span> <span class="n">project_dir</span><span class="o">=</span><span class="s2">&quot;./parse_project_dir&quot;</span><span class="p">)</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">start_parsing</span><span class="p">(</span><span class="s2">&quot;your/path/to/parse_config.yaml&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>The format for corpus data can be found <a class="reference internal" href="data_format.html#corpus-dataset"><span class="std std-ref">corpus data format</span></a></p>
-</div>
+<p>Then you can check out the parsing result in the <code class="docutils literal notranslate"><span class="pre">./parse_project_dir</span></code> directory.</p>
+<p>For more details about parsing, please refer <a class="reference internal" href="parse/parse.html"><span class="std std-doc">here</span></a>.</p>
 </section>
-<section id="make-qa-data-from-corpus-data">
-<h2>Make qa data from corpus data<a class="headerlink" href="#make-qa-data-from-corpus-data" title="Link to this heading">¶</a></h2>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>The format for qa data can be found <a class="reference internal" href="data_format.html#qa-dataset"><span class="std std-ref">qa data format</span></a></p>
+</section>
+<section id="chunking">
+<h2>2. Chunking<a class="headerlink" href="#chunking" title="Link to this heading">¶</a></h2>
+<section id="id1">
+<h3>Set YAML File<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">modules</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">module_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">llama_index_chunk</span>
+<span class="w">    </span><span class="nt">chunk_method</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Token</span>
+<span class="w">    </span><span class="nt">chunk_size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1024</span>
+<span class="w">    </span><span class="nt">chunk_overlap</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">24</span>
+<span class="w">    </span><span class="nt">add_file_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">en</span>
+</pre></div>
 </div>
+<p>You can also use multiple Chunk modules at once.
+In this case, you need to use one corpus to create QA and then map the rest of the corpus to QA Data.</p>
+<p>If the chunk method is different, the retrieval_gt will be different, so we need to remap it to the QA dataset.</p>
+</section>
+<section id="start-chunking">
+<h3>Start Chunking<a class="headerlink" href="#start-chunking" title="Link to this heading">¶</a></h3>
+<p>You can chunk your parsed results with just a few lines of code.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">autorag.chunker</span> <span class="kn">import</span> <span class="n">Chunker</span>
+
+<span class="n">chunker</span> <span class="o">=</span> <span class="n">Chunker</span><span class="o">.</span><span class="n">from_parquet</span><span class="p">(</span><span class="n">parsed_data_path</span><span class="o">=</span><span class="s2">&quot;your/parsed/data/path&quot;</span><span class="p">,</span> <span class="n">project_dir</span><span class="o">=</span><span class="s2">&quot;./chunk_project_dir&quot;</span><span class="p">)</span>
+<span class="n">chunker</span><span class="o">.</span><span class="n">start_chunking</span><span class="p">(</span><span class="s2">&quot;your/path/to/chunk_config.yaml&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Then you can check out the chunking result in the <code class="docutils literal notranslate"><span class="pre">./chunk_project_dir</span></code> directory.</p>
+<p>For more details about chunking, please refer <a class="reference internal" href="chunk/chunk.html"><span class="std std-doc">here</span></a>.</p>
+</section>
+</section>
+<section id="qa-creation">
+<h2>3. QA Creation<a class="headerlink" href="#qa-creation" title="Link to this heading">¶</a></h2>
+<section id="before-you-start-qa-creation">
+<h3>Before you start QA Creation<a class="headerlink" href="#before-you-start-qa-creation" title="Link to this heading">¶</a></h3>
+<p>Corpus and QA are one set.
+If multiple corpus are created using multiple chunk methods, each corpus needs its own QA dataset that is mapped.</p>
+<p>Therefore, if you have multiple corpus, you need to create an initial QA using one corpus and remap the QA for the remaining corpus to create multiple QA - Corpus Sets.</p>
+<p>Chapter 3(QA Creation) describes how to create an Initial QA with one corpus.
+Chapter 4(QA - Corpus mapping) describes how to remap the QAs for the rest of the corpus.</p>
+<p>If you created your corpus using only one chunking method, you don’t need Chapter 4.
+However, if you have created a corpus using multiple chunking methods and want to perform chunking optimization, you should refer to Chapter 4.</p>
+</section>
+<section id="start-qa-creation">
+<h3>Start QA Creation<a class="headerlink" href="#start-qa-creation" title="Link to this heading">¶</a></h3>
+<p>You can create QA dataset with just a few lines of code.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">llama_index.llms.openai</span> <span class="kn">import</span> <span class="n">OpenAI</span>
-<span class="kn">from</span> <span class="nn">autorag.data.qacreation</span> <span class="kn">import</span> <span class="n">generate_qa_llama_index</span><span class="p">,</span> <span class="n">make_single_content_qa</span>
 
-<span class="n">corpus_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="s1">&#39;path/to/corpus.parquet&#39;</span><span class="p">)</span>
-<span class="n">llm</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;gpt-3.5-turbo&#39;</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
-<span class="n">qa_df</span> <span class="o">=</span> <span class="n">make_single_content_qa</span><span class="p">(</span><span class="n">corpus_df</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="n">generate_qa_llama_index</span><span class="p">,</span> <span class="n">llm</span><span class="o">=</span><span class="n">llm</span><span class="p">,</span> <span class="n">question_num_per_content</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-                               <span class="n">output_filepath</span><span class="o">=</span><span class="s1">&#39;path/to/qa.parquet&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p><code class="docutils literal notranslate"><span class="pre">generate_qa_llama_index</span></code> is a function designed to generate <strong>questions</strong> and its <strong>generation_gt</strong> per content.
-You can set the number of questions per content by changing <code class="docutils literal notranslate"><span class="pre">question_num_per_content</span></code> parameter.</p>
-<p>And the <code class="docutils literal notranslate"><span class="pre">make_single_content_qa</span></code> function is designed to generate <code class="docutils literal notranslate"><span class="pre">qa.parquet</span></code> file using input function.
-It generates ‘single content’ qa data, also known as ‘single-hop’ or ‘single-document’ QA data.
-Which means it uses only one passage per question for answering the question.</p>
-<div class="admonition-what-is-passage admonition">
-<p class="admonition-title">What is passage?</p>
-<p>Passage is chunked units from raw data.</p>
-</div>
-</section>
-<section id="use-custom-prompt">
-<h2>Use custom prompt<a class="headerlink" href="#use-custom-prompt" title="Link to this heading">¶</a></h2>
-<p>You can use custom prompt to generate qa data.
-The prompt must contains two placeholders:</p>
-<ul class="simple">
-<li><p>{{text}}: The content string</p></li>
-<li><p>{{num_questions}}: The number of questions to generate</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">autorag.data.qa.filter.dontknow</span> <span class="kn">import</span> <span class="n">dontknow_filter_rule_based</span>
+<span class="kn">from</span> <span class="nn">autorag.data.qa.generation_gt.llama_index_gen_gt</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">make_basic_gen_gt</span><span class="p">,</span>
+    <span class="n">make_concise_gen_gt</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">autorag.data.qa.schema</span> <span class="kn">import</span> <span class="n">Raw</span><span class="p">,</span> <span class="n">Corpus</span>
+<span class="kn">from</span> <span class="nn">autorag.data.qa.query.llama_gen_query</span> <span class="kn">import</span> <span class="n">factoid_query_gen</span>
+<span class="kn">from</span> <span class="nn">autorag.data.qa.sample</span> <span class="kn">import</span> <span class="n">random_single_hop</span>
 
-<span class="kn">from</span> <span class="nn">llama_index.llms.openai</span> <span class="kn">import</span> <span class="n">OpenAI</span>
-<span class="kn">from</span> <span class="nn">autorag.data.qacreation</span> <span class="kn">import</span> <span class="n">generate_qa_llama_index</span><span class="p">,</span> <span class="n">make_single_content_qa</span>
+<span class="n">llm</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">()</span>
+<span class="n">raw_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="s2">&quot;your/path/to/parsed.parquet&quot;</span><span class="p">)</span>
+<span class="n">raw_instance</span> <span class="o">=</span> <span class="n">Raw</span><span class="p">(</span><span class="n">raw_df</span><span class="p">)</span>
 
-<span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Generate question and answer pairs for the given passage.</span>
+<span class="n">corpus_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="s2">&quot;your/path/to/corpus.parquet&quot;</span><span class="p">)</span>
+<span class="n">corpus_instance</span> <span class="o">=</span> <span class="n">Corpus</span><span class="p">(</span><span class="n">corpus_df</span><span class="p">,</span> <span class="n">raw_instance</span><span class="p">)</span>
 
-<span class="s2">Passage:</span>
-<span class="s2">{{text}}</span>
+<span class="n">initial_qa</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">corpus_instance</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">random_single_hop</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">map</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+    <span class="p">)</span>
+    <span class="o">.</span><span class="n">make_retrieval_gt_contents</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">batch_apply</span><span class="p">(</span>
+        <span class="n">factoid_query_gen</span><span class="p">,</span>  <span class="c1"># query generation</span>
+        <span class="n">llm</span><span class="o">=</span><span class="n">llm</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="o">.</span><span class="n">batch_apply</span><span class="p">(</span>
+        <span class="n">make_basic_gen_gt</span><span class="p">,</span>  <span class="c1"># answer generation (basic)</span>
+        <span class="n">llm</span><span class="o">=</span><span class="n">llm</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="o">.</span><span class="n">batch_apply</span><span class="p">(</span>
+        <span class="n">make_concise_gen_gt</span><span class="p">,</span>  <span class="c1"># answer generation (concise)</span>
+        <span class="n">llm</span><span class="o">=</span><span class="n">llm</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="o">.</span><span class="n">filter</span><span class="p">(</span>
+        <span class="n">dontknow_filter_rule_based</span><span class="p">,</span>  <span class="c1"># filter don&#39;t know</span>
+        <span class="n">lang</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+<span class="p">)</span>
 
-<span class="s2">Number of questions to generate: {{num_questions}}</span>
-
-<span class="s2">Example:</span>
-<span class="s2">[Q]: What is this?</span>
-<span class="s2">[A]: This is a sample question.</span>
-
-<span class="s2">Result:</span>
-<span class="s2">&quot;&quot;&quot;</span>
-
-<span class="n">corpus_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="s1">&#39;path/to/corpus.parquet&#39;</span><span class="p">)</span>
-<span class="n">llm</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;gpt-3.5-turbo&#39;</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
-<span class="n">qa_df</span> <span class="o">=</span> <span class="n">make_single_content_qa</span><span class="p">(</span><span class="n">corpus_df</span><span class="p">,</span> <span class="n">content_size</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">qa_creation_func</span><span class="o">=</span><span class="n">generate_qa_llama_index</span><span class="p">,</span>
-                               <span class="n">llm</span><span class="o">=</span><span class="n">llm</span><span class="p">,</span> <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">,</span> <span class="n">question_num_per_content</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">initial_qa</span><span class="o">.</span><span class="n">to_parquet</span><span class="p">(</span><span class="s1">&#39;./qa.parquet&#39;</span><span class="p">,</span> <span class="s1">&#39;./corpus.parquet&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
-<section id="use-multiple-prompts">
-<h2>Use multiple prompts<a class="headerlink" href="#use-multiple-prompts" title="Link to this heading">¶</a></h2>
-<p>If you want to generate different types of question and answer pairs, you can use multiple prompts.
-From now, we support distributing multiple prompts by randomly based on the ratio of each prompt.
-It means that the prompt will be selected by ratio per passage.</p>
-<p>For this, you must provide a dictionary.
-The dictionary must have the key, which is the prompt text file path, and the value which is the ratio of the prompt.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">llama_index.llms.openai</span> <span class="kn">import</span> <span class="n">OpenAI</span>
-<span class="kn">from</span> <span class="nn">autorag.data.qacreation</span> <span class="kn">import</span> <span class="n">generate_qa_llama_index_by_ratio</span><span class="p">,</span> <span class="n">make_single_content_qa</span>
+</section>
+<section id="qa-corpus-mapping">
+<h2>4. QA - Corpus mapping<a class="headerlink" href="#qa-corpus-mapping" title="Link to this heading">¶</a></h2>
+<p>If you have multiple corpus data, you can map the rest of the corpus to the QA dataset.</p>
+<p>For the chunking optimization, you can evaluate RAG performance with different corpus data.
+You already have the optimal pipeline from the initial QA data,
+so you can use this pipeline to evaluate the RAG performance with different corpus data.</p>
+<p>Before that, you must update all qa data with the new corpus data.
+It uses <code class="docutils literal notranslate"><span class="pre">update_corpus</span></code> method.</p>
+<p>It is highly recommending you to keep the initial <code class="docutils literal notranslate"><span class="pre">QA</span></code> instance.
+If not, you need to build <code class="docutils literal notranslate"><span class="pre">QA</span></code> instance again from the initial raw (parsed) data and corpus data.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">autorag.data.qa.schema</span> <span class="kn">import</span> <span class="n">Raw</span><span class="p">,</span> <span class="n">Corpus</span><span class="p">,</span> <span class="n">QA</span>
 
-<span class="n">ratio_dict</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;prompt1.txt&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="s1">&#39;prompt2.txt&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="s1">&#39;prompt3.txt&#39;</span><span class="p">:</span> <span class="mi">3</span>
-<span class="p">}</span>
+<span class="n">raw</span> <span class="o">=</span> <span class="n">Raw</span><span class="p">(</span><span class="n">initial_raw_df</span><span class="p">)</span>
+<span class="n">corpus</span> <span class="o">=</span> <span class="n">Corpus</span><span class="p">(</span><span class="n">initial_corpus_df</span><span class="p">,</span> <span class="n">raw</span><span class="p">)</span>
+<span class="n">qa</span> <span class="o">=</span> <span class="n">QA</span><span class="p">(</span><span class="n">initial_qa_df</span><span class="p">,</span> <span class="n">corpus</span><span class="p">)</span>
 
-<span class="n">corpus_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="s1">&#39;path/to/corpus.parquet&#39;</span><span class="p">)</span>
-<span class="n">llm</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;gpt-3.5-turbo&#39;</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
-<span class="n">qa_df</span> <span class="o">=</span> <span class="n">make_single_content_qa</span><span class="p">(</span><span class="n">corpus_df</span><span class="p">,</span> <span class="n">content_size</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">qa_creation_func</span><span class="o">=</span><span class="n">generate_qa_llama_index_by_ratio</span><span class="p">,</span>
-                               <span class="n">llm</span><span class="o">=</span><span class="n">llm</span><span class="p">,</span> <span class="n">prompts_ratio</span><span class="o">=</span><span class="n">ratio_dict</span><span class="p">,</span> <span class="n">question_num_per_content</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">batch</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">new_qa</span> <span class="o">=</span> <span class="n">qa</span><span class="o">.</span><span class="n">update_corpus</span><span class="p">(</span><span class="n">Corpus</span><span class="p">(</span><span class="n">new_corpus_df</span><span class="p">,</span> <span class="n">raw</span><span class="p">))</span>
 </pre></div>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Remeber all prompts must have the placeholders <code class="docutils literal notranslate"><span class="pre">{{text}}</span></code> and <code class="docutils literal notranslate"><span class="pre">{{num_questions}}</span></code>.</p>
-</div>
+<p>Now <code class="docutils literal notranslate"><span class="pre">new_qa</span></code> have new <code class="docutils literal notranslate"><span class="pre">retrieval_gt</span></code> data for the new corpus.</p>
+<p>Now with the new corpus data and new qa datas, you can evaluate the RAG performance with different corpus data.</p>
 </section>
 </section>
 
@@ -562,14 +571,14 @@ The dictionary must have the key, which is the prompt text file path, and the va
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../local_model.html">
+          <a class="prev-page" href="../test_your_rag.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Configure LLM &amp; Embedding models</div>
+                <div class="title">Evaluate your RAG</div>
                 
               </div>
             </a>
@@ -603,13 +612,24 @@ The dictionary must have the key, which is the prompt text file path, and the va
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Start creating your own evaluation data</a><ul>
-<li><a class="reference internal" href="#index">Index</a></li>
+<li><a class="reference internal" href="#">Evaluation data creation tutorial</a><ul>
 <li><a class="reference internal" href="#overview">Overview</a></li>
-<li><a class="reference internal" href="#make-corpus-data-from-raw-documents">Make corpus data from raw documents</a></li>
-<li><a class="reference internal" href="#make-qa-data-from-corpus-data">Make qa data from corpus data</a></li>
-<li><a class="reference internal" href="#use-custom-prompt">Use custom prompt</a></li>
-<li><a class="reference internal" href="#use-multiple-prompts">Use multiple prompts</a></li>
+<li><a class="reference internal" href="#parsing">1. Parsing</a><ul>
+<li><a class="reference internal" href="#set-yaml-file">Set YAML File</a></li>
+<li><a class="reference internal" href="#start-parsing">Start Parsing</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#chunking">2. Chunking</a><ul>
+<li><a class="reference internal" href="#id1">Set YAML File</a></li>
+<li><a class="reference internal" href="#start-chunking">Start Chunking</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#qa-creation">3. QA Creation</a><ul>
+<li><a class="reference internal" href="#before-you-start-qa-creation">Before you start QA Creation</a></li>
+<li><a class="reference internal" href="#start-qa-creation">Start QA Creation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#qa-corpus-mapping">4. QA - Corpus mapping</a></li>
 </ul>
 </li>
 </ul>
@@ -622,9 +642,9 @@ The dictionary must have the key, which is the prompt text file path, and the va
     </aside>
   </div>
 </div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../_static/scripts/furo.js?v=4e2eecee"></script>
+    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/tabs.js?v=3ee01567"></script>

@@ -12,17 +12,17 @@
         gtag('js', new Date());
         gtag('config', 'G-T8ZKQM6RT9');
     </script>
-    <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="autorag.nodes.passagefilter package" href="autorag.nodes.passagefilter.html" /><link rel="prev" title="autorag.nodes.passageaugmenter package" href="autorag.nodes.passageaugmenter.html" />
+    <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" />
         <link rel="canonical" href="https://docs.auto-rag.com/api_spec/autorag.nodes.passagecompressor.html" />
 
-    <!-- Generated with Sphinx 7.3.7 and Furo 2024.05.06 -->
+    <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
         <title>autorag.nodes.passagecompressor package - AutoRAG documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=387cc868" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=36a5483c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
     
     
 
@@ -101,19 +101,6 @@
       <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
     </svg>
   </symbol>
-  <symbol id="svg-sun-half" viewBox="0 0 24 24">
-    <title>Auto light/dark mode</title>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-      <circle cx="12" cy="12" r="9" />
-      <path d="M13 12h5" />
-      <path d="M13 15h4" />
-      <path d="M13 18h1" />
-      <path d="M13 9h4" />
-      <path d="M13 6h1" />
-    </svg>
-  </symbol>
   <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
     <title>Auto light/dark, in light mode</title>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -154,7 +141,7 @@
       <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
       <path d="M13.5 6.5l4 4" />
       <path d="M20 21l2 -2l-2 -2" />
-      <path d="M17 17l-2 2l2 2" /
+      <path d="M17 17l-2 2l2 2" />
     </svg>
   </symbol>
   <symbol id="svg-eye" viewBox="0 0 24 24">
@@ -231,19 +218,67 @@
 <li class="toctree-l1"><a class="reference internal" href="../structure.html">Structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">TroubleShooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../local_model.html">Configure LLM &amp; Embedding models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../migration.html">Migration Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../test_your_rag.html">Evaluate your RAG</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Data Creation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../data_creation/tutorial.html">Start creating your own evaluation data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_creation/tutorial.html">Evaluation data creation tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../data_creation/data_format.html">Dataset Format</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data_creation/ragas.html">RAGAS evaluation data generation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../data_creation/data_creation.html">Data Creation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Data Creation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../data_creation/qa_creation/qa_creation.html">QA creation</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of QA creation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../data_creation/qa_creation/query_gen.html">Query Generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data_creation/qa_creation/answer_gen.html">Answer Generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data_creation/qa_creation/filter.html">Filtering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data_creation/qa_creation/evolve.html">Query Evolving</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../data_creation/chunk/chunk.html">Chunk</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Chunk</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../data_creation/chunk/langchain_chunk.html">Langchain Chunk</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data_creation/chunk/llama_index_chunk.html">Llama Index Chunk</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../data_creation/parse/parse.html">Parse</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Parse</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../data_creation/parse/langchain_parse.html">Langchain Parse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data_creation/parse/llama_parse.html">Llama Parse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data_creation/parse/clova.html">Clova</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data_creation/parse/table_hybrid_parse.html">Table Hybrid Parse</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../data_creation/legacy/legacy.html">Legacy</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Legacy</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../data_creation/legacy/ragas.html">RAGAS evaluation data generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data_creation/legacy/tutorial.html">Start creating your own evaluation data</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Optimization</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../optimization/optimization.html">How optimization works</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../optimization/folder_structure.html">Folder Structure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../optimization/custom_config.html">Make custom config yaml file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../optimization/custom_config.html">Make a custom config YAML file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../optimization/strategies.html">Strategy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../optimization/sample_config.html">Sample YAML file guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../integration/llm/llm.html">Configure LLM</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Configure LLM</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integration/llm/aws_bedrock.html">AWS Bedrock x AutoRAG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/llm/huggingface_llm.html">HuggingFace LLM x AutoRAG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/llm/nvidia_nim.html">Nvidia Nim x AutoRAG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/llm/ollama.html">OLLAMA x AutoRAG</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../integration/vectordb/vectordb.html">Configure Vector DB</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Configure Vector DB</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/chroma.html">Chroma</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/milvus.html">Milvus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/weaviate.html">Weaviate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/pinecone.html">Pinecone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/couchbase.html">Couchbase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/qdrant.html">Qdrant</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Evaluation Metrics</span></p>
 <ul>
@@ -254,26 +289,24 @@
 <p class="caption" role="heading"><span class="caption-text">Nodes &amp; Modules</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../nodes/index.html">Available List</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/query_expansion/query_expansion.html"><strong>1. Query Expansion</strong></a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of 1. Query Expansion</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/query_expansion/query_expansion.html"><strong>1. Query Expansion</strong></a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of 1. Query Expansion</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/query_expansion/query_decompose.html">Query Decompose</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/query_expansion/hyde.html">HyDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/query_expansion/multi_query_expansion.html">Multi Query Expansion</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/retrieval/retrieval.html">2. Retrieval</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of 2. Retrieval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/retrieval/retrieval.html">2. Retrieval</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of 2. Retrieval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/bm25.html">BM25</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/vectordb.html">Vectordb</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/hybrid_rrf.html">Hybrid - rrf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/hybrid_cc.html">Hybrid - cc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/hybrid_rsf.html">Hybrid - rsf</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/hybrid_dbsf.html">Hybrid - dbsf</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_augmenter/passage_augmenter.html">3. Passage Augmenter</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of 3. Passage Augmenter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_augmenter/passage_augmenter.html">3. Passage Augmenter</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of 3. Passage Augmenter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_augmenter/prev_next_augmenter.html">Prev Next Augmenter</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_reranker/passage_reranker.html">4. Passage_Reranker</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of 4. Passage_Reranker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_reranker/passage_reranker.html">4. Passage_Reranker</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of 4. Passage_Reranker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/upr.html">UPR</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/tart.html">TART</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/monot5.html">MonoT5</a></li>
@@ -286,9 +319,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/flag_embedding_reranker.html">Flag Embedding Reranker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/flag_embedding_llm_reranker.html">Flag Embedding LLM Reranker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/time_reranker.html">Time Reranker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/openvino_reranker.html">OpenVINO Reranker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/voyageai_reranker.html">voyageai_reranker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/mixedbreadai_reranker.html">Mixedbread AI Reranker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/flashrank_reranker.html">FlashRank Reranker</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_filter/passage_filter.html">5. Passage Filter</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of 5. Passage Filter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_filter/passage_filter.html">5. Passage Filter</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of 5. Passage Filter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_filter/similarity_threshold_cutoff.html">Similarity Threshold Cutoff</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_filter/similarity_percentile_cutoff.html">Similarity Percentile Cutoff</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_filter/recency_filter.html">Recency Filter</a></li>
@@ -296,18 +333,19 @@
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_filter/percentile_cutoff.html">Percentile Cutoff</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_compressor/passage_compressor.html">6. Passage_Compressor</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of 6. Passage_Compressor</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_compressor/passage_compressor.html">6. Passage_Compressor</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle navigation of 6. Passage_Compressor</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_compressor/tree_summarize.html">Tree Summarize</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_compressor/refine.html">Refine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_compressor/longllmlingua.html">Long LLM Lingua</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/prompt_maker/prompt_maker.html">7. Prompt Maker</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of 7. Prompt Maker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/prompt_maker/prompt_maker.html">7. Prompt Maker</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle navigation of 7. Prompt Maker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/prompt_maker/fstring.html">F-String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/prompt_maker/long_context_reorder.html">Long Context Reorder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nodes/prompt_maker/window_replacement.html">Window Replacement</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/generator/generator.html">8. Generator</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of 8. Generator</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/generator/generator.html">8. Generator</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle navigation of 8. Generator</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/generator/llama_index_llm.html">llama_index LLM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/generator/vllm.html">vllm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/generator/openai_llm.html">OpenAI LLM</a></li>
@@ -324,37 +362,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../roadmap/modular_rag.html">Road to Modular RAG</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
-<ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="modules.html">autorag</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of autorag</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2 current has-children"><a class="reference internal" href="autorag.html">autorag package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of autorag package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l3 has-children"><a class="reference internal" href="autorag.data.html">autorag.data package</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of autorag.data package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="autorag.data.corpus.html">autorag.data.corpus package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="autorag.data.qacreation.html">autorag.data.qacreation package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="autorag.data.utils.html">autorag.data.utils package</a></li>
-</ul>
-</li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="autorag.evaluate.html">autorag.evaluate package</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of autorag.evaluate package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="autorag.evaluate.metric.html">autorag.evaluate.metric package</a></li>
-</ul>
-</li>
-<li class="toctree-l3 current has-children"><a class="reference internal" href="autorag.nodes.html">autorag.nodes package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle navigation of autorag.nodes package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="autorag.nodes.generator.html">autorag.nodes.generator package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="autorag.nodes.passageaugmenter.html">autorag.nodes.passageaugmenter package</a></li>
-<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">autorag.nodes.passagecompressor package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="autorag.nodes.passagefilter.html">autorag.nodes.passagefilter package</a></li>
-<li class="toctree-l4 has-children"><a class="reference internal" href="autorag.nodes.passagereranker.html">autorag.nodes.passagereranker package</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle navigation of autorag.nodes.passagereranker package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5"><a class="reference internal" href="autorag.nodes.passagereranker.tart.html">autorag.nodes.passagereranker.tart package</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="autorag.nodes.promptmaker.html">autorag.nodes.promptmaker package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="autorag.nodes.queryexpansion.html">autorag.nodes.queryexpansion package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="autorag.nodes.retrieval.html">autorag.nodes.retrieval package</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="autorag.schema.html">autorag.schema package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="autorag.utils.html">autorag.utils package</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="modules.html">autorag</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle navigation of autorag</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -404,29 +413,63 @@
 </section>
 <section id="module-autorag.nodes.passagecompressor.base">
 <span id="autorag-nodes-passagecompressor-base-module"></span><h2>autorag.nodes.passagecompressor.base module<a class="headerlink" href="#module-autorag.nodes.passagecompressor.base" title="Link to this heading">¶</a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.base.make_llm">
-<span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.base.</span></span><span class="sig-name descname"><span class="pre">make_llm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llm_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">LLMPredictor</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">LLM</span></span></span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/base.html#make_llm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.base.make_llm" title="Link to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.base.BasePassageCompressor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.base.</span></span><span class="sig-name descname"><span class="pre">BasePassageCompressor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/base.html#BasePassageCompressor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.base.BasePassageCompressor" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="autorag.schema.html#autorag.schema.base.BaseModule" title="autorag.schema.base.BaseModule"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModule</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.base.BasePassageCompressor.cast_to_run">
+<span class="sig-name descname"><span class="pre">cast_to_run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">previous_result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/base.html#BasePassageCompressor.cast_to_run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.base.BasePassageCompressor.cast_to_run" title="Link to this definition">¶</a></dt>
+<dd><p>This function is for cast function (a.k.a decorator) only for pure function in the whole node.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.base.LlamaIndexCompressor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.base.</span></span><span class="sig-name descname"><span class="pre">LlamaIndexCompressor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/base.html#LlamaIndexCompressor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.base.LlamaIndexCompressor" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#autorag.nodes.passagecompressor.base.BasePassageCompressor" title="autorag.nodes.passagecompressor.base.BasePassageCompressor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BasePassageCompressor</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.base.LlamaIndexCompressor.param_list">
+<span class="sig-name descname"><span class="pre">param_list</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['prompt',</span> <span class="pre">'chat_prompt',</span> <span class="pre">'batch']</span></em><a class="headerlink" href="#autorag.nodes.passagecompressor.base.LlamaIndexCompressor.param_list" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.base.LlamaIndexCompressor.pure">
+<span class="sig-name descname"><span class="pre">pure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">previous_result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/base.html#LlamaIndexCompressor.pure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.base.LlamaIndexCompressor.pure" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 <dl class="py function">
-<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.base.passage_compressor_node">
-<span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.base.</span></span><span class="sig-name descname"><span class="pre">passage_compressor_node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/base.html#passage_compressor_node"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.base.passage_compressor_node" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.base.make_llm">
+<span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.base.</span></span><span class="sig-name descname"><span class="pre">make_llm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llm_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">LLM</span></span></span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/base.html#make_llm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.base.make_llm" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </section>
 <section id="module-autorag.nodes.passagecompressor.longllmlingua">
 <span id="autorag-nodes-passagecompressor-longllmlingua-module"></span><h2>autorag.nodes.passagecompressor.longllmlingua module<a class="headerlink" href="#module-autorag.nodes.passagecompressor.longllmlingua" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.longllmlingua.LongLLMLingua">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.longllmlingua.</span></span><span class="sig-name descname"><span class="pre">LongLLMLingua</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NousResearch/Llama-2-7b-hf'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/longllmlingua.html#LongLLMLingua"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.longllmlingua.LongLLMLingua" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#autorag.nodes.passagecompressor.base.BasePassageCompressor" title="autorag.nodes.passagecompressor.base.BasePassageCompressor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BasePassageCompressor</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.longllmlingua.LongLLMLingua.pure">
+<span class="sig-name descname"><span class="pre">pure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">previous_result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/longllmlingua.html#LongLLMLingua.pure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.longllmlingua.LongLLMLingua.pure" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 <dl class="py function">
 <dt class="sig sig-object py" id="autorag.nodes.passagecompressor.longllmlingua.llmlingua_pure">
-<span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.longllmlingua.</span></span><span class="sig-name descname"><span class="pre">llmlingua_pure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_lingua</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PromptCompressor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instructions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">300</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/longllmlingua.html#llmlingua_pure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.longllmlingua.llmlingua_pure" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.longllmlingua.</span></span><span class="sig-name descname"><span class="pre">llmlingua_pure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_lingua</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instructions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">300</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/longllmlingua.html#llmlingua_pure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.longllmlingua.llmlingua_pure" title="Link to this definition">¶</a></dt>
 <dd><p>Return the compressed text.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>query</strong> – The query for retrieved passages.</p></li>
 <li><p><strong>contents</strong> – The contents of retrieved passages.</p></li>
-<li><p><strong>llm_lingua</strong> – The llm instance that will be used to compress.</p></li>
+<li><p><strong>llm_lingua</strong> – The llm instance, that will be used to compress.</p></li>
 <li><p><strong>instructions</strong> – The instructions for compression.</p></li>
 <li><p><strong>target_token</strong> – The target token for compression.
 Default is 300.</p></li>
@@ -439,80 +482,32 @@ Default is 300.</p></li>
 </dl>
 </dd></dl>
 
-<dl class="py function">
-<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.longllmlingua.longllmlingua">
-<span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.longllmlingua.</span></span><span class="sig-name descname"><span class="pre">longllmlingua</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">queries</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scores</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'NousResearch/Llama-2-7b-hf'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instructions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">300</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/longllmlingua.html#longllmlingua"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.longllmlingua.longllmlingua" title="Link to this definition">¶</a></dt>
-<dd><p>Compresses the retrieved texts using LongLLMLingua.
-For more information, visit <a class="reference external" href="https://github.com/microsoft/LLMLingua">https://github.com/microsoft/LLMLingua</a>.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>queries</strong> – The queries for retrieved passages.</p></li>
-<li><p><strong>contents</strong> – The contents of retrieved passages.</p></li>
-<li><p><strong>scores</strong> – The scores of retrieved passages.
-Do not use in this function, so you can pass an empty list.</p></li>
-<li><p><strong>ids</strong> – The ids of retrieved passages.
-Do not use in this function, so you can pass an empty list.</p></li>
-<li><p><strong>model_name</strong> – The model name to use for compression.
-Default is “NousResearch/Llama-2-7b-hf”.</p></li>
-<li><p><strong>instructions</strong> – The instructions for compression.
-Default is None. When it is None, it will use default instructions.</p></li>
-<li><p><strong>target_token</strong> – The target token for compression.
-Default is 300.</p></li>
-<li><p><strong>kwargs</strong> – Additional keyword arguments.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The list of compressed texts.</p>
-</dd>
-</dl>
-</dd></dl>
-
 </section>
 <section id="module-autorag.nodes.passagecompressor.pass_compressor">
 <span id="autorag-nodes-passagecompressor-pass-compressor-module"></span><h2>autorag.nodes.passagecompressor.pass_compressor module<a class="headerlink" href="#module-autorag.nodes.passagecompressor.pass_compressor" title="Link to this heading">¶</a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.pass_compressor.pass_compressor">
-<span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.pass_compressor.</span></span><span class="sig-name descname"><span class="pre">pass_compressor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/pass_compressor.html#pass_compressor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.pass_compressor.pass_compressor" title="Link to this definition">¶</a></dt>
-<dd><p>Do not perform any passage compression</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.pass_compressor.PassCompressor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.pass_compressor.</span></span><span class="sig-name descname"><span class="pre">PassCompressor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/pass_compressor.html#PassCompressor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.pass_compressor.PassCompressor" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#autorag.nodes.passagecompressor.base.BasePassageCompressor" title="autorag.nodes.passagecompressor.base.BasePassageCompressor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BasePassageCompressor</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.pass_compressor.PassCompressor.pure">
+<span class="sig-name descname"><span class="pre">pure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">previous_result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/pass_compressor.html#PassCompressor.pure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.pass_compressor.PassCompressor.pure" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
 </section>
 <section id="module-autorag.nodes.passagecompressor.refine">
 <span id="autorag-nodes-passagecompressor-refine-module"></span><h2>autorag.nodes.passagecompressor.refine module<a class="headerlink" href="#module-autorag.nodes.passagecompressor.refine" title="Link to this heading">¶</a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.refine.refine">
-<span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.refine.</span></span><span class="sig-name descname"><span class="pre">refine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">queries</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scores</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">LLMPredictor</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">LLM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chat_prompt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">16</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/refine.html#refine"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.refine.refine" title="Link to this definition">¶</a></dt>
-<dd><p>Refine a response to a query across text chunks.
-This function is a wrapper for llama_index.response_synthesizers.Refine.
-For more information, visit <a class="reference external" href="https://docs.llamaindex.ai/en/stable/examples/response_synthesizers/refine/">https://docs.llamaindex.ai/en/stable/examples/response_synthesizers/refine/</a>.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>queries</strong> – The queries for retrieved passages.</p></li>
-<li><p><strong>contents</strong> – The contents of retrieved passages.</p></li>
-<li><p><strong>scores</strong> – The scores of retrieved passages.
-Do not use in this function, so you can pass an empty list.</p></li>
-<li><p><strong>ids</strong> – The ids of retrieved passages.
-Do not use in this function, so you can pass an empty list.</p></li>
-<li><p><strong>llm</strong> – The llm instance that will be used to summarize.</p></li>
-<li><p><strong>prompt</strong> – The prompt template for refine.
-If you want to use chat prompt, you should pass chat_prompt instead.
-At prompt, you must specify where to put ‘context_msg’ and ‘query_str’.
-Default is None. When it is None, it will use llama index default prompt.</p></li>
-<li><p><strong>chat_prompt</strong> – The chat prompt template for refine.
-If you want to use normal prompt, you should pass prompt instead.
-At prompt, you must specify where to put ‘context_msg’ and ‘query_str’.
-Default is None. When it is None, it will use llama index default chat prompt.</p></li>
-<li><p><strong>batch</strong> – The batch size for llm.
-Set low if you face some errors.
-Default is 16.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The list of compressed texts.</p>
-</dd>
-</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.refine.Refine">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.refine.</span></span><span class="sig-name descname"><span class="pre">Refine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/refine.html#Refine"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.refine.Refine" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#autorag.nodes.passagecompressor.base.LlamaIndexCompressor" title="autorag.nodes.passagecompressor.base.LlamaIndexCompressor"><code class="xref py py-class docutils literal notranslate"><span class="pre">LlamaIndexCompressor</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.refine.Refine.llm">
+<span class="sig-name descname"><span class="pre">llm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">LLM</span></em><a class="headerlink" href="#autorag.nodes.passagecompressor.refine.Refine.llm" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
 </section>
@@ -520,12 +515,12 @@ Default is 16.</p></li>
 <span id="autorag-nodes-passagecompressor-run-module"></span><h2>autorag.nodes.passagecompressor.run module<a class="headerlink" href="#module-autorag.nodes.passagecompressor.run" title="Link to this heading">¶</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="autorag.nodes.passagecompressor.run.evaluate_passage_compressor_node">
-<span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.run.</span></span><span class="sig-name descname"><span class="pre">evaluate_passage_compressor_node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result_df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">retrieval_contents_gt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metrics</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/run.html#evaluate_passage_compressor_node"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.run.evaluate_passage_compressor_node" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.run.</span></span><span class="sig-name descname"><span class="pre">evaluate_passage_compressor_node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result_df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metric_inputs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="autorag.schema.html#autorag.schema.metricinput.MetricInput" title="autorag.schema.metricinput.MetricInput"><span class="pre">MetricInput</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metrics</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/run.html#evaluate_passage_compressor_node"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.run.evaluate_passage_compressor_node" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="autorag.nodes.passagecompressor.run.run_passage_compressor_node">
-<span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.run.</span></span><span class="sig-name descname"><span class="pre">run_passage_compressor_node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modules</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Callable</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module_params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">previous_result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_line_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strategies</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/run.html#run_passage_compressor_node"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.run.run_passage_compressor_node" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.run.</span></span><span class="sig-name descname"><span class="pre">run_passage_compressor_node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modules</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module_params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">previous_result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_line_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strategies</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/run.html#run_passage_compressor_node"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.run.run_passage_compressor_node" title="Link to this definition">¶</a></dt>
 <dd><p>Run evaluation and select the best module among passage compressor modules.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -551,39 +546,15 @@ This node will replace ‘retrieved_contents’ to compressed passages, so its l
 </section>
 <section id="module-autorag.nodes.passagecompressor.tree_summarize">
 <span id="autorag-nodes-passagecompressor-tree-summarize-module"></span><h2>autorag.nodes.passagecompressor.tree_summarize module<a class="headerlink" href="#module-autorag.nodes.passagecompressor.tree_summarize" title="Link to this heading">¶</a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.tree_summarize.tree_summarize">
-<span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.tree_summarize.</span></span><span class="sig-name descname"><span class="pre">tree_summarize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">queries</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scores</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">LLMPredictor</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">LLM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chat_prompt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">16</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/tree_summarize.html#tree_summarize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.tree_summarize.tree_summarize" title="Link to this definition">¶</a></dt>
-<dd><p>Recursively merge retrieved texts and summarizes them in a bottom-up fashion.
-This function is a wrapper for llama_index.response_synthesizers.TreeSummarize.
-For more information, visit <a class="reference external" href="https://docs.llamaindex.ai/en/latest/examples/response_synthesizers/tree_summarize.html">https://docs.llamaindex.ai/en/latest/examples/response_synthesizers/tree_summarize.html</a>.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>queries</strong> – The queries for retrieved passages.</p></li>
-<li><p><strong>contents</strong> – The contents of retrieved passages.</p></li>
-<li><p><strong>scores</strong> – The scores of retrieved passages.
-Do not use in this function, so you can pass an empty list.</p></li>
-<li><p><strong>ids</strong> – The ids of retrieved passages.
-Do not use in this function, so you can pass an empty list.</p></li>
-<li><p><strong>llm</strong> – The llm instance that will be used to summarize.</p></li>
-<li><p><strong>prompt</strong> – The prompt template for summarization.
-If you want to use chat prompt, you should pass chat_prompt instead.
-At prompt, you must specify where to put ‘context_str’ and ‘query_str’.
-Default is None. When it is None, it will use llama index default prompt.</p></li>
-<li><p><strong>chat_prompt</strong> – The chat prompt template for summarization.
-If you want to use normal prompt, you should pass prompt instead.
-At prompt, you must specify where to put ‘context_str’ and ‘query_str’.
-Default is None. When it is None, it will use llama index default chat prompt.</p></li>
-<li><p><strong>batch</strong> – The batch size for llm.
-Set low if you face some errors.
-Default is 16.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The list of compressed texts.</p>
-</dd>
-</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.tree_summarize.TreeSummarize">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">autorag.nodes.passagecompressor.tree_summarize.</span></span><span class="sig-name descname"><span class="pre">TreeSummarize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/autorag/nodes/passagecompressor/tree_summarize.html#TreeSummarize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#autorag.nodes.passagecompressor.tree_summarize.TreeSummarize" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#autorag.nodes.passagecompressor.base.LlamaIndexCompressor" title="autorag.nodes.passagecompressor.base.LlamaIndexCompressor"><code class="xref py py-class docutils literal notranslate"><span class="pre">LlamaIndexCompressor</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="autorag.nodes.passagecompressor.tree_summarize.TreeSummarize.llm">
+<span class="sig-name descname"><span class="pre">llm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">LLM</span></em><a class="headerlink" href="#autorag.nodes.passagecompressor.tree_summarize.TreeSummarize.llm" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
 </section>
@@ -597,26 +568,8 @@ Default is 16.</p></li>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="autorag.nodes.passagefilter.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">autorag.nodes.passagefilter package</div>
-              </div>
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-            </a>
-          <a class="prev-page" href="autorag.nodes.passageaugmenter.html">
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-              <div class="page-info">
-                <div class="context">
-                  <span>Previous</span>
-                </div>
-                
-                <div class="title">autorag.nodes.passageaugmenter package</div>
-                
-              </div>
-            </a>
+          
+          
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -650,21 +603,38 @@ Default is 16.</p></li>
 <li><a class="reference internal" href="#">autorag.nodes.passagecompressor package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
 <li><a class="reference internal" href="#module-autorag.nodes.passagecompressor.base">autorag.nodes.passagecompressor.base module</a><ul>
+<li><a class="reference internal" href="#autorag.nodes.passagecompressor.base.BasePassageCompressor"><code class="docutils literal notranslate"><span class="pre">BasePassageCompressor</span></code></a><ul>
+<li><a class="reference internal" href="#autorag.nodes.passagecompressor.base.BasePassageCompressor.cast_to_run"><code class="docutils literal notranslate"><span class="pre">BasePassageCompressor.cast_to_run()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#autorag.nodes.passagecompressor.base.LlamaIndexCompressor"><code class="docutils literal notranslate"><span class="pre">LlamaIndexCompressor</span></code></a><ul>
+<li><a class="reference internal" href="#autorag.nodes.passagecompressor.base.LlamaIndexCompressor.param_list"><code class="docutils literal notranslate"><span class="pre">LlamaIndexCompressor.param_list</span></code></a></li>
+<li><a class="reference internal" href="#autorag.nodes.passagecompressor.base.LlamaIndexCompressor.pure"><code class="docutils literal notranslate"><span class="pre">LlamaIndexCompressor.pure()</span></code></a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#autorag.nodes.passagecompressor.base.make_llm"><code class="docutils literal notranslate"><span class="pre">make_llm()</span></code></a></li>
-<li><a class="reference internal" href="#autorag.nodes.passagecompressor.base.passage_compressor_node"><code class="docutils literal notranslate"><span class="pre">passage_compressor_node()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-autorag.nodes.passagecompressor.longllmlingua">autorag.nodes.passagecompressor.longllmlingua module</a><ul>
+<li><a class="reference internal" href="#autorag.nodes.passagecompressor.longllmlingua.LongLLMLingua"><code class="docutils literal notranslate"><span class="pre">LongLLMLingua</span></code></a><ul>
+<li><a class="reference internal" href="#autorag.nodes.passagecompressor.longllmlingua.LongLLMLingua.pure"><code class="docutils literal notranslate"><span class="pre">LongLLMLingua.pure()</span></code></a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#autorag.nodes.passagecompressor.longllmlingua.llmlingua_pure"><code class="docutils literal notranslate"><span class="pre">llmlingua_pure()</span></code></a></li>
-<li><a class="reference internal" href="#autorag.nodes.passagecompressor.longllmlingua.longllmlingua"><code class="docutils literal notranslate"><span class="pre">longllmlingua()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-autorag.nodes.passagecompressor.pass_compressor">autorag.nodes.passagecompressor.pass_compressor module</a><ul>
-<li><a class="reference internal" href="#autorag.nodes.passagecompressor.pass_compressor.pass_compressor"><code class="docutils literal notranslate"><span class="pre">pass_compressor()</span></code></a></li>
+<li><a class="reference internal" href="#autorag.nodes.passagecompressor.pass_compressor.PassCompressor"><code class="docutils literal notranslate"><span class="pre">PassCompressor</span></code></a><ul>
+<li><a class="reference internal" href="#autorag.nodes.passagecompressor.pass_compressor.PassCompressor.pure"><code class="docutils literal notranslate"><span class="pre">PassCompressor.pure()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-autorag.nodes.passagecompressor.refine">autorag.nodes.passagecompressor.refine module</a><ul>
-<li><a class="reference internal" href="#autorag.nodes.passagecompressor.refine.refine"><code class="docutils literal notranslate"><span class="pre">refine()</span></code></a></li>
+<li><a class="reference internal" href="#autorag.nodes.passagecompressor.refine.Refine"><code class="docutils literal notranslate"><span class="pre">Refine</span></code></a><ul>
+<li><a class="reference internal" href="#autorag.nodes.passagecompressor.refine.Refine.llm"><code class="docutils literal notranslate"><span class="pre">Refine.llm</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-autorag.nodes.passagecompressor.run">autorag.nodes.passagecompressor.run module</a><ul>
@@ -673,7 +643,10 @@ Default is 16.</p></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-autorag.nodes.passagecompressor.tree_summarize">autorag.nodes.passagecompressor.tree_summarize module</a><ul>
-<li><a class="reference internal" href="#autorag.nodes.passagecompressor.tree_summarize.tree_summarize"><code class="docutils literal notranslate"><span class="pre">tree_summarize()</span></code></a></li>
+<li><a class="reference internal" href="#autorag.nodes.passagecompressor.tree_summarize.TreeSummarize"><code class="docutils literal notranslate"><span class="pre">TreeSummarize</span></code></a><ul>
+<li><a class="reference internal" href="#autorag.nodes.passagecompressor.tree_summarize.TreeSummarize.llm"><code class="docutils literal notranslate"><span class="pre">TreeSummarize.llm</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-autorag.nodes.passagecompressor">Module contents</a></li>
@@ -689,9 +662,9 @@ Default is 16.</p></li>
     </aside>
   </div>
 </div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../_static/scripts/furo.js?v=4e2eecee"></script>
+    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/tabs.js?v=3ee01567"></script>

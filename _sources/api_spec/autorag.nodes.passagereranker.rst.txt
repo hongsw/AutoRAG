@@ -52,6 +52,14 @@ autorag.nodes.passagereranker.flag\_embedding\_llm module
    :undoc-members:
    :show-inheritance:
 
+autorag.nodes.passagereranker.flashrank module
+----------------------------------------------
+
+.. automodule:: autorag.nodes.passagereranker.flashrank
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 autorag.nodes.passagereranker.jina module
 -----------------------------------------
 
@@ -68,10 +76,26 @@ autorag.nodes.passagereranker.koreranker module
    :undoc-members:
    :show-inheritance:
 
+autorag.nodes.passagereranker.mixedbreadai module
+-------------------------------------------------
+
+.. automodule:: autorag.nodes.passagereranker.mixedbreadai
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 autorag.nodes.passagereranker.monot5 module
 -------------------------------------------
 
 .. automodule:: autorag.nodes.passagereranker.monot5
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+autorag.nodes.passagereranker.openvino module
+---------------------------------------------
+
+.. automodule:: autorag.nodes.passagereranker.openvino
    :members:
    :undoc-members:
    :show-inheritance:
@@ -120,6 +144,14 @@ autorag.nodes.passagereranker.upr module
 ----------------------------------------
 
 .. automodule:: autorag.nodes.passagereranker.upr
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+autorag.nodes.passagereranker.voyageai module
+---------------------------------------------
+
+.. automodule:: autorag.nodes.passagereranker.voyageai
    :members:
    :undoc-members:
    :show-inheritance:
